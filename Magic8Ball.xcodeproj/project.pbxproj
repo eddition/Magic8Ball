@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DCFA4D391C763BFD00F6BE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA4D381C763BFD00F6BE6A /* AppDelegate.swift */; };
-		DCFA4D3B1C763BFD00F6BE6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA4D3A1C763BFD00F6BE6A /* ViewController.swift */; };
 		DCFA4D3E1C763BFD00F6BE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFA4D3C1C763BFD00F6BE6A /* Main.storyboard */; };
 		DCFA4D401C763BFD00F6BE6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFA4D3F1C763BFD00F6BE6A /* Images.xcassets */; };
 		DCFA4D431C763BFD00F6BE6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFA4D411C763BFD00F6BE6A /* LaunchScreen.xib */; };
 		DCFA4D4F1C763BFD00F6BE6A /* Magic8BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA4D4E1C763BFD00F6BE6A /* Magic8BallTests.swift */; };
+		DCFA4D591C763EC700F6BE6A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA4D581C763EC700F6BE6A /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		DCFA4D331C763BFD00F6BE6A /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFA4D371C763BFD00F6BE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCFA4D381C763BFD00F6BE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCFA4D3A1C763BFD00F6BE6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCFA4D3D1C763BFD00F6BE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCFA4D3F1C763BFD00F6BE6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCFA4D421C763BFD00F6BE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DCFA4D481C763BFD00F6BE6A /* Magic8BallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Magic8BallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFA4D4D1C763BFD00F6BE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCFA4D4E1C763BFD00F6BE6A /* Magic8BallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallTests.swift; sourceTree = "<group>"; };
+		DCFA4D581C763EC700F6BE6A /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,8 @@
 		DCFA4D351C763BFD00F6BE6A /* Magic8Ball */ = {
 			isa = PBXGroup;
 			children = (
-				DCFA4D381C763BFD00F6BE6A /* AppDelegate.swift */,
-				DCFA4D3A1C763BFD00F6BE6A /* ViewController.swift */,
 				DCFA4D3C1C763BFD00F6BE6A /* Main.storyboard */,
-				DCFA4D3F1C763BFD00F6BE6A /* Images.xcassets */,
-				DCFA4D411C763BFD00F6BE6A /* LaunchScreen.xib */,
+				DCFA4D581C763EC700F6BE6A /* MainVC.swift */,
 				DCFA4D361C763BFD00F6BE6A /* Supporting Files */,
 			);
 			path = Magic8Ball;
@@ -90,6 +87,9 @@
 		DCFA4D361C763BFD00F6BE6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCFA4D411C763BFD00F6BE6A /* LaunchScreen.xib */,
+				DCFA4D3F1C763BFD00F6BE6A /* Images.xcassets */,
+				DCFA4D381C763BFD00F6BE6A /* AppDelegate.swift */,
 				DCFA4D371C763BFD00F6BE6A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					DCFA4D321C763BFD00F6BE6A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = WN8773P7KT;
 					};
 					DCFA4D471C763BFD00F6BE6A = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,8 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFA4D3B1C763BFD00F6BE6A /* ViewController.swift in Sources */,
 				DCFA4D391C763BFD00F6BE6A /* AppDelegate.swift in Sources */,
+				DCFA4D591C763EC700F6BE6A /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Magic8Ball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Magic8Ball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
